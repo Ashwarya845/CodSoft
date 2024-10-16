@@ -1,0 +1,23 @@
+Random
+import java.util.*;
+class Random
+{
+    public static void main(String args[])
+    {
+        System.out.println("Guess a random number");
+        int rand=sc.nextInt();
+        int i=0;
+        while(i<100)
+        {
+            int rand=sc.nextInt();
+            if(rand==i)
+            {
+            System.out.println("Correct Guess");
+            System.out.println("The number of times program ran is"+i);
+            }
+            else
+            continue;
+        }
+
+    }
+}
