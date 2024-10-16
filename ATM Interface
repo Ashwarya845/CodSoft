@@ -1,0 +1,49 @@
+ATM Interface
+import java.util.*;
+class bank
+{
+    int amount;
+    int withdraw;
+    int deposit;
+    double balance=0.0;
+    int choice;
+    public static void main()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the task you want to perform in your account");
+        System.out.println("Enter 1 to withdraw,2 to deposit and 3 to check balance");
+        choice=sc.nextInt();
+        switch(choice)
+        case 1:
+            balance-=withdraw(amount);
+        case 2:
+            balance+=deposit(amount);
+        case 3:
+            System.out.println(balance);
+        break
+    }
+    public static void withdraw(int amount)
+    {
+        System.out.println("Enter the amount to be withdrawn");
+        amount=sc.nextInt();
+        if(amount<=balance)
+        return amount;
+        else
+        System.out.println("Not sufficient balance,Transaction Failed");
+    }    
+        public static void deposit(int amount)
+    {
+        System.out.println("Enter the amount to be deposited");
+        amount=sc.nextInt();
+        return amount;
+    }    
+}
+
+                
+            
+
+        
+        
+        
+        
+    
